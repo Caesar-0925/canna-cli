@@ -1,0 +1,66 @@
+{
+  "name": "canna-cli",
+  "version": "0.0.2",
+  "description": "A scaffold for rapid generation of modern front-end projects.",
+  "author": "caesar-0925",
+  "email": "caesar-0925@qq.com",
+  "main": "bin/canna.js",
+  "bin": {
+    "canna": "bin/canna.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint --fix --ext .js --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "commander": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=10.22.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:prettier/recommend"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  },
+  "homepage": "https://github.com/Caesar-0925/canna-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Caesar-0925/canna-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Caesar-0925/canna-cli/issues"
+  },
+  "keywords": [
+    "scaffold",
+    "cli",
+    "modern",
+    "front-end"
+  ],
+  "license": "MIT"
+}
